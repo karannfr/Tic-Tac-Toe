@@ -24,11 +24,11 @@ function playmove(cell){
       str = 'X';
   }
   if(count%2 == 0){
-    var audio = new Audio('note-low.mp3');
+    var audio = new Audio('public/note-low.mp3');
     audio.play();
   }
   else{
-    var audio = new Audio('note-high.mp3');
+    var audio = new Audio('public/note-high.mp3');
     audio.play();
   }
   const clickedCell = document.querySelector(`.${cell}`);
@@ -106,7 +106,7 @@ function checkWinner(s, x, y) {
 }
 
 function declareWinner(s,value,type){
-  var audio = new Audio('game-over.mp3');
+  var audio = new Audio('public/game-over.mp3');
   audio.play();
   if(s=='X'){
     animations(value,type);
@@ -267,7 +267,7 @@ function animations(value,type){
 }
 
 function declareDraw() {
-  var audio = new Audio('game-over-tie.mp3');
+  var audio = new Audio('public/game-over-tie.mp3');
   audio.play();
   const cells = document.querySelectorAll('#board');
   for (var j = 0; j < cells.length; j++) {
