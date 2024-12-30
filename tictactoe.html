@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tictactoe.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header>
+  <div class="game">
+    <button class="cell00" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell01" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell02" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell10" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell11" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell12" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell20" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell21" id ="board" onclick="playmove(this.className)"></button>
+    <button class="cell22" id ="board" onclick="playmove(this.className)"></button>
+  </div>
+  <div class="score">
+    <div class="scores">Player1 (X)</div>
+    <div class="scores">Tie</div>
+    <div class="scores">Player2 (O)</div>
+  </div>  
+  <div class="value">
+    <div class="values" id="player1">0</div>
+    <div class="values" id="tie">0</div>
+    <div class="values" id="player2">0</div>
+  </div>  
+  <script src="tictactoe.js"></script>
+</body>
+</html>
