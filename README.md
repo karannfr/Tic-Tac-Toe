@@ -20,4 +20,4 @@ Follow these steps to run the project on your local machine:
 1. **Clone the Repository**:
    Open your terminal and run:
    ```bash
-   git clone https://github.com/<your-username>/tic-tac-toe.git
+   git clone https://github.com/karannfr/tic-tac-toe.git
